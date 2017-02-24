@@ -1,0 +1,192 @@
+page-history-lottery {
+
+}
+
+.historyLottery ul {
+  list-style: none;
+}
+
+.historyLottery ul > li {
+  float: left;
+}
+
+.historyLottery {
+  background: #fff;
+}
+
+////标题
+//.titleHead{
+//  overflow: hidden;
+//  padding: 0;
+//  margin:0;
+//  background: #999;
+//  height: 2.8rem;
+//  line-height: 2.8rem;
+//}
+//.titleHead>li{
+//  width:10%;
+//  text-align: center;
+//  color:#fff;
+//}
+//.titleHead>li:first-child{
+//  width:30%;
+//}
+////列表项
+
+.historyLottery div ul {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+//标题
+.historyLottery div ul .firstHistory {
+  width: 23%;
+}
+
+.historyLottery div ul li {
+  width: 11%;
+  text-align: center;
+}
+
+.historyLotteryTable {
+  background: #999;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+//主体
+.historyLotteryTbody {
+  color: #666;
+  background-image: url('../../assets/triangle.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.historyLotteryTbody li {
+  font-size: 1.2rem;
+}
+
+.moneyList div:nth-child(odd) ul {
+  background-color: #fff;
+}
+
+.moneyList div:nth-child(even) ul {
+  background-color: #f9f9f9;
+}
+
+.historyLotteryDetails {
+  background: #fff;
+  width: 100%;
+}
+
+//生肖
+.animal {
+  color: #999;
+}
+
+//单双
+.double {
+  color: #666;
+}
+
+.first {
+  color: red;
+}
+
+//五行颜色－金
+.elementGold {
+  color: #DDC626;
+}
+
+//五行颜色－木
+.elementTree {
+  color: #85BC35;
+}
+
+//五行颜色－水
+.elementWater {
+  color: #29B0E5;
+}
+
+//五行颜色－火
+.elementHot {
+  color: #F24938;
+}
+
+//五行颜色－土
+.elementSoil {
+  color: #9E6B12;
+}
+
+//波色－红
+.colRed {
+  color: #CC0000;
+}
+
+//波色－绿
+.colGreen {
+  color: #33CC33;
+}
+
+//波色－蓝
+.colBlue {
+  color: #3333FF;
+}
+
+//家禽－家
+.wildHome {
+  color: #CCCC00;
+}
+
+//家禽－野
+.wildHomeOut {
+  color: #3399FF;
+}
+
+//头部边框设置
+.tableHead {
+  border-top: 1px solid #fff;
+}
+
+.tableHead > li {
+  border-right: 1px solid #fff;
+}
+
+.tableHead > li:last-child {
+  border: none;
+}
+
+//内部边框
+.tableTbody > li {
+  border-right: 1px solid #e3e3e3;
+}
+
+.tableTbody > li:last-child {
+  border-right: none;
+}
+
+.historyLotteryDetails > div > span.detailsFirst {
+  color: #666;
+}
+
+.historyLotteryDetails > div > span {
+  display: inline-block;
+  width: 11%;
+  text-align: center;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-bottom: 1px solid #CEBDA7;
+  border-right: 1px solid #CEBDA7;
+}
+
+.historyLotteryDetails > div > span.detailsFirst {
+  width: 23%;
+}
+.historyLotteryDetails > div> span:last-child{
+  border-right:0 ;
+}

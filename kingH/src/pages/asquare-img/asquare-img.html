@@ -1,0 +1,26 @@
+<ion-content class="bigImg">
+  <div class="bigImgList">
+    <ion-slides (ionSlideDidChange)="slideChanged()">
+      <ion-slide>
+        <img src="assets/bigDetail.png" alt="" (pinch)="pinch($event)">
+      </ion-slide>
+
+      <ion-slide>
+        <img src="assets/bigDetail.png" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/bigDetail.png" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/bigDetail.png" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/bigDetail.png" alt="">
+      </ion-slide>
+    </ion-slides>
+    <div class="saveBtn">
+      <div>{{currentIndex+1}}/5</div>
+      <div>保存</div>
+    </div>
+  </div>
+</ion-content>

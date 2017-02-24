@@ -1,0 +1,62 @@
+page-report-problems {
+
+}
+
+.reportProblems {
+  background-color: #ededed;
+}
+
+.reportProblems h4 {
+  font-size: 1.4rem;
+  color: #999;
+  padding: 1rem 1.1rem;
+  background-color: #fff;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 1.2rem;
+}
+
+.list-ios > .item-block:first-child, .reportForms ion-item {
+  border-bottom: 1px solid #ededed;
+}
+
+.reportForms ion-label {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.list-md .item-block .item-inner {
+  border: 0;
+}
+
+.reportForms ion-item {
+  padding: 0 1.1rem;
+}
+
+.reportForms ion-list {
+  margin-bottom: 1.2rem;
+}
+
+.reportForms textarea {
+  width: 100%;
+  resize: none;
+  padding: 1.2rem;
+  height: 7rem;
+  font-size: 1.2rem;
+}
+
+.reportContent textarea {
+  border: none;
+}
+
+.reportContent {
+  position: relative;
+}
+
+.reportContent span {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  color: #999;
+  font-size: 1.4rem;
+}

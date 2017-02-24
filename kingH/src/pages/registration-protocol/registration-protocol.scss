@@ -1,0 +1,65 @@
+page-registration-protocol {
+
+}
+//返回按钮
+ion-icon {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+//头部标题
+.toolbar-title-md {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #333;
+  font-weight: 400;
+  position: relative;
+}
+
+//头部背景颜色
+.header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios, .toolbar-background-md {
+  background: #edba3e;
+}
+
+//头部标题大小
+.toolbar-title-ios {
+  color: #333;
+  font-weight: 400;
+}
+
+//主体内容
+.item1 {
+  font-size: 1.4rem;
+  text-indent: 2.4rem;
+  line-height: 2.2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+  padding: 0 1.1rem;
+  color: #333;
+}
+
+.itemLast {
+  margin-top: 0;
+}
+
+//页脚
+.titleFooter {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #333;
+  position: absolute;
+  bottom: 1rem;
+}
+//头部返回按钮
+.backHeadBtn{
+  position: relative;
+}
+.backHeadBtnC{
+  position: absolute;
+  top:50%;
+  transform: translate(0,-50%);
+  z-index:100;
+  padding: 0.5rem 1.1rem;
+  vertical-align: middle;
+}

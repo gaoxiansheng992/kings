@@ -1,0 +1,38 @@
+page-free {
+
+}
+page-about-us {
+
+}
+page-home {
+
+}
+//返回按钮颜色
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{
+  color:#333;
+}
+.header-ios .toolbar-ios:last-child .toolbar-background-ios{
+  border-width:0;
+}
+//头部背景颜色
+.header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios,.toolbar-background-md{
+  background: #edba3e;
+}
+//头部标题大小
+.toolbar-title-ios{
+  color:#333;
+  font-weight: 400;
+}
+//主体内容
+.item2{
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+  padding:0 1.1rem;
+  color:#333;
+  text-indent: 0;
+}
+.itemLast{
+  margin-top: 0;
+}

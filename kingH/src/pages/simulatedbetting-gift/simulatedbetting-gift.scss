@@ -1,0 +1,65 @@
+page-simulatedbetting-gift {
+
+}
+
+//主体背景颜色
+.bgcolor {
+  background: #fff;
+}
+
+//轮播下边距
+.slider {
+  background: #ededed;
+}
+
+//.sliderBlank{
+//  height: 0.6rem;
+//  background: #fff;
+//}
+//小圆点定位
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0.5rem;
+}
+
+//小圆点激活后颜色
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: #7e796b;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+//兑换列表
+.chargelistItem {
+  position: relative;
+  padding-top: 0.5rem;
+  background: #ededed;
+}
+
+.chargelistItem span {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+//兑换按钮
+.chargelistItem span.chargeBtn {
+  left: 88%;
+  color: #333;
+  background: #edba3e;
+  padding: 0.5rem 1.25rem;
+  transform: translate(-50%, -0.7rem);
+  -ms-transform: translate(-50%, -0.7rem); /* IE 9 */
+  -moz-transform: translate(-50%, -0.7rem); /* Firefox */
+  -webkit-transform: translate(-50%, -0.7rem); /* Safari 和 Chrome */
+  -o-transform: translate(-50%, -0.7rem); /* Opera */
+  border-radius: 12px;
+  text-align: center;
+}

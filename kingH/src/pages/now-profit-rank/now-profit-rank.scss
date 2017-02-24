@@ -1,0 +1,70 @@
+page-now-profit-rank {
+
+}
+.myprofit {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  z-index: 100;
+  transform: translate(0, -50%);
+  font-size: 1.5rem;
+  color: #333;
+}
+
+//排行列表
+.rankList {
+  padding: 1.1rem;
+  overflow: hidden;
+  border-bottom: 1px solid #ededed;
+  position: relative;
+}
+
+//头像
+.rankImg {
+  margin-right: 1.8rem;
+  float: left;
+}
+
+.rankImg img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1.75rem;
+}
+
+//内容
+.rankText {
+  float: left;
+}
+
+//等级
+.rankTextHead span {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.rankTextHead img {
+  width: 1.4rem;
+  height: 1.4rem;
+  display: inline-block;
+  vertical-align:bottom;
+  padding-left: 0.2rem;
+}
+
+.rankTextContent {
+  margin-top: 1.5rem;
+}
+
+.rankTextContent span {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.rankTextContent span:nth-child(2) {
+  position: absolute;
+  bottom: 1.1rem;
+  right: 2rem;
+}
+
+ion-content .rankList:last-child {
+  border: 0;
+}

@@ -1,0 +1,58 @@
+page-recharge {
+
+}
+.totalMoney {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: right;
+  padding: 1rem 1.1rem;
+  margin: 0;
+}
+
+//列表
+//列表标题
+.moneyTitle {
+  overflow: hidden;
+  padding: 0.9rem 1.1rem;
+  margin: 0;
+  background: #e3e3e3;
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.moneyTitle li, .moneyContent li {
+  float: left;
+  text-align: center;
+  list-style: none;
+  width: 25%;
+}
+
+//列表内容
+.moneyContent {
+  overflow: hidden;
+  padding: 0.9rem 1.1rem;
+  margin: 0;
+  background: #fff;
+  border-bottom:1px solid #e3e3e3;
+}
+.moneyContent li{
+  font-size: 1.2rem;
+}
+.moneyContent .type{
+  color:#333;
+}
+.moneyContent .date{
+  color:#666;
+}
+.moneyContent .money{
+  color:#666;
+}
+.moneyContent .state{
+  color:#999;
+}
+//点击查看银行进度
+.moneyContent .state .process{
+  color:#29bdfb;
+  margin-top: 0.8rem;
+  display: inline-block;
+}

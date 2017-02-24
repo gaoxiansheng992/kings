@@ -1,0 +1,180 @@
+page-heart-water {
+
+}
+
+#aquareId {
+  background-color: #ededed;
+}
+
+.aquare .squareSlider {
+  background: #ededed;
+}
+
+.aquare .squareSlider img {
+  width: 100%;
+  height: 10rem;
+}
+
+//最新热帖
+.aquareTitle {
+  padding: 0.3rem 1.1rem 0.75rem 1.1rem;
+  background-color: #ededed;
+}
+
+//帖子列表
+.onlysquare {
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.squarePost {
+  padding: 1.1rem;
+  padding-bottom: 0;
+}
+
+.squarepostHead {
+  overflow: hidden;
+}
+
+.squarepostHeadUse, .squarepostFans, .squarepostHeadtime {
+  float: left;
+  height: 5.5rem;
+}
+
+//头部头像
+.squarepostHeadUse {
+  padding-right: 0.5rem;
+}
+
+.squarepostHeadUse img {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 1.8rem;
+}
+
+//头部大标题
+.squarepostFans {
+}
+
+//头部大标题下等级
+.squarepostFansgrade > span {
+  font-size: 1.4rem;
+  color: #333;
+  letter-spacing: 0.2rem;
+}
+
+.squarepostFansgrade img {
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: baseline;
+}
+
+//粉丝
+.squarepostFans{
+  width:50%;
+}
+.squarepostFans .fans {
+  color: #666;
+  font-size: 1.2rem;
+  padding-top: 0.8rem;
+}
+
+//发帖时间
+.squarepostHeadtime {
+  float: right;
+}
+
+.squarepostHeadtime div {
+  color: #666;
+  font-size: 1rem;
+  text-align: right;
+}
+
+//关注按钮
+.squarepostHeadtime .sauqreFollow {
+  padding-top: 0.8rem;
+}
+
+.squarepostHeadtime .sauqreFollow span {
+  font-size: 1.4rem;
+  color: #edba3e;
+  display: inline-block;
+  text-align: center;
+  width: 5rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  border: 1px solid #edba3e;
+  border-radius: 0.4rem;
+  background-color: #fff;
+}
+
+//已关注
+.squarepostHeadtime .sauqreFollow span.isFollow {
+  color: #999;
+  border: 1px solid #999;
+}
+
+//标题
+.squarepostText{
+  font-size: 1.4rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin:0;
+  padding-bottom: 1.2rem;
+}
+
+//图片集
+.squarepostImg {
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 1.2rem;
+}
+.squarepostImg li {
+  float: left;
+  width: 33.3%;
+  padding: 0 0.2rem;
+}
+
+//点赞，评论，转发
+.squarepostLike {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.squarepostLike li {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+}
+
+.squarepostLike img {
+  width: 2rem;
+  vertical-align: middle;
+}
+
+.squarepostLike span {
+  color: #999;
+  font-size: 1.4rem;
+}
+
+//弹出框
+ion-toast {
+  width: 35%;
+  padding: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.toast-md .toast-wrapper {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 0.65rem;
+}

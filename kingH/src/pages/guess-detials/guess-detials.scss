@@ -1,0 +1,64 @@
+page-guess-detials {
+
+}
+
+.imgList p {
+  height: 1.3rem;
+  margin: 0;
+}
+
+//一级评论弹出框
+.replay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.replay .mask {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+}
+
+.replay .mask p {
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 14px 0;
+  font-weight: normal;
+  border-bottom: 1px solid #ededed;
+}
+
+//回复输入框
+.replayInput {
+  padding: 0.8rem 1.1rem;
+  background: #ededed;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.replayInput input[type="text"] {
+  width: 75%;
+  height: 30px;
+  border-radius: 3px;
+  border: 0;
+  padding: 0 0.4rem;
+}
+
+.replayInput input[type="submit"] {
+  width: 20%;
+  height: 30px;
+  color: #fff;
+  background: #387ef5;
+  border: 0;
+  border-radius: 3px;
+  float: right;
+}

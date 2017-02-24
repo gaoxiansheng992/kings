@@ -1,0 +1,13 @@
+<ion-content class="analysisList">
+  <!--按钮组-->
+  <div class="btnListItem" *ngIf="type==1">
+    <span class="active" (click)="to1()">近12期</span><span (click)="to2()">近36期</span><span (click)="to3()">近一年</span>
+  </div>
+  <div class="btnListItem" *ngIf="type==2">
+    <span (click)="to1()">近12期</span><span (click)="to2()" class="active">近36期</span><span (click)="to3()">近一年</span>
+  </div>
+  <div class="btnListItem" *ngIf="type==3">
+    <span (click)="to1()">近12期</span><span (click)="to2()">近36期</span><span (click)="to3()" class="active">近一年</span>
+  </div>
+  <div [ng2-echarts]="chartData" style="height: 400px; width: 100%;margin-top: -20%"></div>
+</ion-content>

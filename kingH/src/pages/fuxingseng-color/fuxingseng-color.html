@@ -1,0 +1,22 @@
+<ion-header>
+  <div class="backHeadBtn">
+    <ion-toolbar>
+      <ion-title>福星送彩</ion-title>
+    </ion-toolbar>
+    <div class="backHeadBtnC" (click)="back()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </div>
+  </div>
+</ion-header>
+<ion-content class="fuxingsendColor">
+  <div class="sendColorMoney">
+    <img src="assets/allMoney.png" alt="">
+    <span>998金币</span>
+  </div>
+  <div class="moneyMask" *ngIf="showMoney" (tap)="closeMask()">
+    <div class="moneyMaskImg">
+      <img src="assets/bigsmallpng.png" [@flyInOut]>
+      <span>50金币</span>
+    </div>
+  </div>
+</ion-content>

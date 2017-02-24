@@ -1,0 +1,20 @@
+
+<ion-header>
+  <div class="backHeadBtn">
+    <ion-toolbar>
+      <ion-title>帮助中心</ion-title>
+    </ion-toolbar>
+    <div class="backHeadBtnC" (click)="back()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </div>
+  </div>
+</ion-header>
+<ion-content class="main">
+  <div class="black"></div>
+  <div *ngFor="let item of items;let i=index" class="question" id="container">
+    <span (click)="show(i)">{{ item.question }}
+      <ion-icon name="ios-arrow-forward" class="helpIon" [@visibilityChanged]="item.visibility"></ion-icon>
+    </span>
+    <div *ngIf="item.show">{{item.anwsers}}</div>
+  </div>
+</ion-content>

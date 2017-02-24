@@ -1,0 +1,40 @@
+page-analysis-list {
+
+}
+.analysisList{
+}
+.btnListItem{
+  padding:1.2rem 1.1rem;
+  background-color: #f2f2f2;
+  position: relative;
+  z-index:9999;
+}
+//标签页切换样式
+.btnListItem span{
+  height: 3.2rem;
+  line-height: 3.2rem;
+  display: inline-block;
+  text-align: center;
+  width:33.3%;
+  font-size: 1.4rem;
+  color:#333;
+  background-color: #fff;
+  border: 1px solid #ECB93C;
+}
+.btnListItem span:nth-child(2){
+  border-right:none ;
+  border-left:none ;
+}
+.btnListItem span:last-child{
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.btnListItem span:first-child{
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+//激活项目
+.btnListItem span.active{
+  background-color: #ECB93C;
+  color:#fff;
+}

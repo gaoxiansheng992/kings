@@ -1,0 +1,44 @@
+<ion-header>
+  <div class="backHeadBtn">
+    <ion-toolbar>
+      <ion-title>举报问题</ion-title>
+    </ion-toolbar>
+    <div class="backHeadBtnC" (click)="back()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </div>
+  </div>
+</ion-header>
+<ion-content class="reportProblems">
+  <h4>选择举报原因</h4>
+  <div class="reportProblemsList">
+    <form (submit)="doSubmit($event)" [formGroup]="langForm" class="reportForms">
+      <ion-list radio-group formControlName="langs">
+        <ion-item>
+          <ion-label>违法信息</ion-label>
+          <ion-radio color="secondary" value="golong" checked="true"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>虚假广告</ion-label>
+          <ion-radio color="secondary" value="rust"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>色情低俗</ion-label>
+          <ion-radio color="secondary" value="python"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>事实不符</ion-label>
+          <ion-radio color="secondary" value="ruby"></ion-radio>
+        </ion-item>
+      </ion-list>
+      <!--具体举报原因-->
+      <div class="reportContent">
+        <textarea id="" cols="30" rows="10" placeholder="详细填写举报内容" value=""></textarea>
+        <span>0/40</span>
+      </div>
+      <div class="submitBtn ">
+        <button class="inviteBtn inviteLinkBtn">提&nbsp;&nbsp;&nbsp;&nbsp;交</button>
+      </div>
+    </form>
+  </div>
+</ion-content>
+

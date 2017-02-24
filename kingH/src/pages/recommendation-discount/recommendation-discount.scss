@@ -1,0 +1,41 @@
+page-recommendation-discount {
+
+}
+//列表
+//列表标题
+.discountTitle {
+  overflow: hidden;
+  padding: 0.9rem 1.1rem;
+  margin: 0;
+  background: #e3e3e3;
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.discountTitle li, .discountContent li {
+  float: left;
+  text-align: center;
+  list-style: none;
+  width: 33.33%;
+}
+
+//列表内容
+.discountContent {
+  overflow: hidden;
+  padding: 0.9rem 1.1rem;
+  margin: 0;
+  background: #fff;
+  border-bottom:1px solid #e3e3e3;
+}
+.discountContent li{
+  font-size: 1.2rem;
+}
+.discountContent .type{
+  color:#333;
+}
+.discountContent .date{
+  color:#666;
+}
+.discountContent .money{
+  color:#666;
+}

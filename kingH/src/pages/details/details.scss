@@ -1,0 +1,39 @@
+page-details {
+
+}
+//主体内容空白条
+.black{
+  height:1.2rem;
+  background: #ededed;
+   border-bottom: 1px solid #ccc;
+}
+//主体内容背景色
+.main{
+  background-color: #ededed;
+}
+//列表
+.listItem{
+  background: #ffffff;
+  //height:12rem;
+  padding:0 1.1rem;
+  border-bottom: 1px solid #ccc;
+}
+//标题
+.listItem h1{
+  font-size:1.7rem ;
+  color: #333;
+  margin: 0;
+  padding:1.2rem 0;
+  font-weight: 400;
+}
+//按钮
+.btnList button{
+  padding:0.35rem 0.6rem;
+  font-size:1.4rem;
+  margin-right:0.6rem ;
+  background: #fff;
+  border:1px solid  #edba3d;
+  color:#edba3d;
+  border-radius: 5px;
+  margin-bottom: 1.2rem;
+}

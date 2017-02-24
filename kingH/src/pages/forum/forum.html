@@ -1,0 +1,93 @@
+<ion-content class="forum">
+  <div class="slider squareSlider">
+    <ion-slides pager autoplay=4000 loop speed=1500>
+      <ion-slide *ngFor="let item of carousel">
+        <!--点击图片-->
+        <img [src]="item.url" alt="">
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <!--标签页切换-->
+  <ul class="tabsForm">
+    <li *ngFor="let item of tabs;let s=index" (click)="toNext(s)">
+      <span *ngIf="currentItem==s" class="activeTab">{{item}}</span>
+      <span *ngIf="currentItem!==s">{{item}}</span>
+    </li>
+  </ul>
+  <!--列表-->
+  <div class="forumList">
+    <!--用户名-->
+    <div class="forumListUer">
+      <span>彩资讯官方小秘书</span>
+      <img src="assets/v1.png" alt="">
+      <img src="assets/v2.png" alt="">
+      <img src="assets/v4.png" alt="">
+    </div>
+    <!--标题-->
+    <p class="forumListTitle">
+      133期龙马精神公式①码、3中3（准到准到准133期龙马精神公式①码、3中3（准到准到准
+    </p>
+    <!--点赞，阅读，时间-->
+    <div class="forumListTime">
+      <!--阅读数-->
+      <div class="forumRead">
+        <span>点赞&nbsp;299</span>
+        <span>阅览&nbsp;299</span>
+      </div>
+      <!--时间格式-->
+      <div class="forumTime">
+        <span>16-02-13&nbsp;&nbsp;09:11</span>
+      </div>
+    </div>
+  </div>
+  <div class="forumList">
+    <!--用户名-->
+    <div class="forumListUer">
+      <span>彩资讯官方小秘书</span>
+      <img src="assets/v1.png" alt="">
+      <img src="assets/v2.png" alt="">
+      <img src="assets/v4.png" alt="">
+    </div>
+    <!--标题-->
+    <p class="forumListTitle">
+      133期龙马精神公式①码、3中3（准到准到准133期龙马精神公式①码、3中3（准到准到准
+    </p>
+    <!--点赞，阅读，时间-->
+    <div class="forumListTime">
+      <!--阅读数-->
+      <div class="forumRead">
+        <span>点赞&nbsp;299</span>
+        <span>阅览&nbsp;299</span>
+      </div>
+      <!--时间格式-->
+      <div class="forumTime">
+        <span>16-02-13&nbsp;&nbsp;09:11</span>
+      </div>
+    </div>
+  </div>
+  <div class="forumList">
+    <!--用户名-->
+    <div class="forumListUer">
+      <span>彩资讯官方小秘书</span>
+      <img src="assets/v1.png" alt="">
+      <img src="assets/v2.png" alt="">
+      <img src="assets/v4.png" alt="">
+    </div>
+    <!--标题-->
+    <p class="forumListTitle">
+      133期龙马精神公式①码、3中3（准到准到准133期龙马精神公式①码、3中3（准到准到准
+    </p>
+    <!--点赞，阅读，时间-->
+    <div class="forumListTime">
+      <!--阅读数-->
+      <div class="forumRead">
+        <span>点赞&nbsp;299</span>
+        <span>阅览&nbsp;299</span>
+      </div>
+      <!--时间格式-->
+      <div class="forumTime">
+        <span>16-02-13&nbsp;&nbsp;09:11</span>
+      </div>
+    </div>
+  </div>
+</ion-content>

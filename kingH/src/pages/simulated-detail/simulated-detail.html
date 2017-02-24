@@ -1,0 +1,44 @@
+<ion-header>
+  <div class="backHeadBtn">
+    <ion-toolbar>
+      <ion-title>兑换详情</ion-title>
+    </ion-toolbar>
+    <div class="backHeadBtnC" (click)="back()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </div>
+  </div>
+</ion-header>
+<ion-content class="detailcontent">
+  <div class="chargeDetail">
+    <!--标题-->
+    <div class="shareTitle chargeDetailTitle"><span></span><b>兑换礼品</b></div>
+    <!--图片-->
+    <div class="chargelistItem" id="chargelistItem">
+      <img src="assets/charge1.png" alt="">
+      <span>兑换条件：100金币</span>
+    </div>
+    <!--金币总额-->
+    <div class="shareTitle chargeDetailTitle " id="balance"><span></span><b>金币余额：<a>6000</a></b></div>
+    <!--兑换所需金币-->
+    <div class="needMoneyout">
+      <div class="needMoney">
+        <span>兑换所需金币:<span>{{name*100}}金币</span></span>
+        <!--加减运算-->
+        <div class="numberInput">
+          <span (click)="reduce()">－</span>
+          <input type="number" [(ngModel)]="name" required="required" (blur)="first($event)">
+          <span (click)="add()">＋</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--备注-->
+  <div class="remarks">
+    <textarea name="" placeholder="备注" maxlength="40" (keyup)="count($event)"></textarea>
+    <span>{{textNum}}/40</span>
+  </div>
+  <div class="submitBtn">
+    <button class="inviteBtn inviteLinkBtn" (click)="doAlert()">提&nbsp;&nbsp;&nbsp;&nbsp;交</button>
+  </div>
+
+</ion-content>

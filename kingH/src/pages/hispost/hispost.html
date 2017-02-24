@@ -1,0 +1,37 @@
+<ion-content class="hispost">
+  <div class="allHispost">全部帖子（{{bbsCn}}）</div>
+  <div class="hispostList" *ngFor="let item of list;let s=index">
+    <div class="hispostListHead">
+      <div class="hispostListtime">
+        <span>15-12  11:09</span>
+      </div>
+      <!--标题-->
+      <div class="squarepostText hispostText">
+        <span>{{item.summary}}</span>
+      </div>
+      <!--图片详情-->
+      <ul class="squarepostImg">
+        <li *ngFor="let imgUrl of item.url"><img src="{{imgUrl}}" alt=""></li>
+      </ul>
+    </div>
+    <!--评论，转发，点赞-->
+    <ul class="squarepostLike">
+      <!--评论-->
+      <li>
+        <img src="assets/message.png" alt="">
+        <span>{{item.replyCn}}</span>
+      </li>
+      <!--点赞-->
+      <li (click)="thumbsUp(s)">
+        <img src="assets/recommend_link.png" alt="" *ngIf="item.thumbCntype==1">
+        <img src="assets/recommend_visiter.png" alt="" *ngIf="item.thumbCntype==2">
+        <span>{{item.thumbCn}}</span>
+      </li>
+      <!--转发-->
+      <li>
+        <img src="assets/forward.png" alt="">
+        <span>{{item.forwardCn}}</span>
+      </li>
+    </ul>
+  </div>
+</ion-content>

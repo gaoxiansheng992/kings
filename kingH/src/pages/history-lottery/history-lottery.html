@@ -1,0 +1,53 @@
+<ion-content class="main historyLottery">
+  <div>
+    <ul class="historyLotteryTable tableHead">
+      <li class="firstHistory">年份/期数</li>
+      <li>正一</li>
+      <li>正二</li>
+      <li>正三</li>
+      <li>正四</li>
+      <li>正五</li>
+      <li>正六</li>
+      <li>特码</li>
+    </ul>
+    <div class="moneyList">
+      <div *ngFor="let i of historyLottery">
+        <ul class="historyLotteryTbody tableTbody" (click)="open(i)">
+          <li class="firstHistory">{{i.lotteryTime}}</li>
+          <li *ngFor="let j of i.nLists">{{j}}</li>
+        </ul>
+        <!--详情-->
+        <!--生肖-->
+        <div class="historyLotteryDetails" *ngIf="i.open">
+          <div class="animal">
+            <span class="detailsFirst">生肖</span><span *ngFor="let k of i.aLists">{{k}}</span>
+          </div>
+          <!--五行-->
+          <div class="element">
+            <span class="detailsFirst">五行</span><span *ngFor="let l of i.eLists"><span *ngIf="l=='金'" class="elementGold">{{l}}</span><span *ngIf="l=='木'" class="elementTree">{{l}}</span><span *ngIf="l=='水'" class="elementWater">{{l}}</span><span *ngIf="l=='火'" class="elementHot">{{l}}</span><span *ngIf="l=='土'" class="elementSoil">{{l}}</span>
+            </span>
+          </div>
+          <!--五行-->
+          <div class="col">
+            <span class="detailsFirst">波色</span><span *ngFor="let m of i.cLists"><span *ngIf="m=='红'" class="colRed">{{m}}</span><span *ngIf="m=='绿'" class="colGreen">{{m}}</span><span *ngIf="m=='蓝'" class="colBlue">{{m}}</span>
+            </span>
+          </div>
+          <!--家禽-->
+          <div class="wild">
+            <span class="detailsFirst">家禽</span><span *ngFor="let n of i.wLists"><span *ngIf="n=='家'" class="wildHome">{{n}}</span><span *ngIf="n=='野'" class="wildHomeOut">{{n}}</span>
+            </span>
+          </div>
+          <!--大小-->
+          <div class="animal">
+            <span class="detailsFirst">大小</span><span *ngFor="let o of i.sLists">{{o}}</span>
+          </div>
+          <!--单双-->
+          <div class="double">
+            <span class="detailsFirst">单双</span><span *ngFor="let p of i.dLists">{{p}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-content>
+  <div class="codeCount">
+    <ul class="codeHead">
+      <li class="countThree">年份/期数</li>
+      <li class="countTwo">特码</li>
+      <li class="countTwo">生肖</li>
+      <li class="countTwo">波色</li>
+      <li class="countTwo">单双</li>
+      <li class="countTwo">五行</li>
+      <li class="countTwo">家野</li>
+      <li class="countTwo">大小</li>
+      <li class="countTwo">门数</li>
+      <li class="countTwo">段位</li>
+      <li class="countThree">特码范围</li>
+      <li class="countThree">合数单双</li>
+    </ul>
+    <div class="codeBody">
+      <ul *ngFor="let item of codeItems">
+        <li class="countThree">{{item.period}}</li>
+        <li class="countTwo">{{item.special}}</li>
+        <li class="countTwo codeAnimal">{{item.animal}}</li>
+        <li class="countTwo">
+          <span *ngIf="item.col=='红'" class="colRed">{{item.col}}</span>
+          <span *ngIf="item.col=='绿'" class="colGreen">{{item.col}}</span>
+          <span *ngIf="item.col=='蓝'" class="colBlue">{{item.col}}</span>
+        </li>
+        <li class="countTwo">
+          <span *ngIf="item.doubles=='单'" class="codeSingle">{{item.doubles}}</span>
+          <span *ngIf="item.doubles=='双'" class="codeDouble">{{item.doubles}}</span>
+        </li>
+        <li class="countTwo">
+          <span *ngIf="item.element=='金'" class="elementGold">{{item.element}}</span>
+          <span *ngIf="item.element=='木'" class="elementTree">{{item.element}}</span>
+          <span *ngIf="item.element=='水'" class="elementWater">{{item.element}}</span>
+          <span *ngIf="item.element=='火'" class="elementHot">{{item.element}}</span>
+          <span *ngIf="item.element=='土'" class="elementSoil">{{item.element}}</span>
+        </li>
+        <li class="countTwo">
+          <span *ngIf="item.wild=='家禽'" class="wildHome">{{item.wild}}</span>
+          <span *ngIf="item.wild=='野兽'" class="wildHomeOut">{{item.wild}}</span>
+        </li>
+        <li class="countTwo codeBigSmall">{{item.size}}</li>
+        <li class="countTwo">{{item.door}}门</li>
+        <li class="countTwo">{{item.segment}}段</li>
+        <li class="countThree">{{item.specialRange}}</li>
+        <li class="countThree">{{item.compositeDouble}}/{{item.compositeDoubleNum}}合</li>
+      </ul>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,46 @@
+<ion-header>
+  <div class="backHeadBtn">
+    <ion-toolbar>
+      <ion-title>账户明细</ion-title>
+    </ion-toolbar>
+    <div class="backHeadBtnC" (click)="back()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </div>
+  </div>
+</ion-header>
+<ion-content class="main">
+  <div class="black"></div>
+  <!--元宝-->
+  <div class="listItem">
+    <h1>元宝</h1>
+    <div class="btnList">
+      <button (click)="send()">充值</button>
+      <button (click)="recharge()">提现</button>
+      <button (click)="recommendationAcer()">查看推荐</button>
+      <button (click)="myrecommendationAcer()">我的推荐</button>
+      <button (click)="goldexchange()">元宝兑换</button>
+    </div>
+  </div>
+  <div class="listItem">
+    <h1>金币</h1>
+    <div class="btnList">
+      <button (click)="tree()">摇钱树</button>
+      <button (click)="moneyexchange()">兑换金币</button>
+      <button (click)="pofit()">我的盈利</button>
+      <button (click)="giftexchange()">兑礼品</button>
+    </div>
+  </div>
+  <div class="listItem">
+    <h1>优惠券</h1>
+    <div class="btnList">
+      <button (click)="invitefriends()">邀请好友</button>
+      <button (click)="recommendationDiscount()">查看推荐</button>
+    </div>
+  </div>
+  <div class="listItem">
+    <h1>贡献值</h1>
+    <div class="btnList">
+      <button (click)="myrecommendationDiscount()">被查看</button>
+    </div>
+  </div>
+</ion-content>

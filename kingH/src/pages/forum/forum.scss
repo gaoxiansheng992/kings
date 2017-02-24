@@ -1,0 +1,95 @@
+page-forum {
+
+}
+
+.forum {
+  background-color: #ededed;
+}
+
+//标签页
+.tabsForm {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  background-color: #ededed;
+  padding: 0;
+}
+
+.tabsForm li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  color: #333;
+}
+
+.tabsForm li span {
+  display: inline-block;
+  padding: 1rem 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+  font-size: 1.4rem;
+}
+
+.tabsForm li span.activeTab {
+  color: #edba3e;
+  border-bottom: 3px solid #edba3e;
+}
+
+//列表
+.forumList {
+  padding: 1.1rem;
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.forumListUer {
+  padding-bottom: 0.5rem;
+}
+
+.forumListUer img {
+  width: 1.2rem;
+  vertical-align: baseline;
+  margin-left: 0.5rem;
+}
+
+.forumListUer span {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.forumListTitle {
+  margin: 0;
+  left: 0;
+  font-size: 1.4rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 0.7rem;
+}
+
+.forumListTime {
+  overflow: hidden;
+}
+
+.forumListTime div {
+  float: left;
+}
+
+.forumListTime .forumTime {
+  float: right;
+}
+
+.forumRead span {
+  font-size: 1rem;
+  color: #ccc;
+  padding-right: 1.5rem;
+}
+.forumRead{
+  width:60%;
+}
+.forumTime span {
+  font-size: 1rem;
+  color: #666;
+}

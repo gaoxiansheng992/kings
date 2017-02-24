@@ -1,0 +1,40 @@
+page-hispost {
+
+}
+.hispost{
+  background-color: #f2f2f2;
+}
+.hispostListHead {
+  padding: 0 1.1rem;
+}
+.hispostList{
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+//全部帖子
+.allHispost {
+  padding: 1rem 1.1rem;
+  background: #f2f2f2;
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+//发帖时间
+.hispostListtime {
+  padding: 1rem 0;
+  text-align: right;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+//发帖内容
+.hispostText span {
+  font-size: 1.4rem;
+  color: #333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

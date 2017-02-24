@@ -1,0 +1,130 @@
+page-invite-list {
+
+}
+
+#main {
+  background: #fff;
+}
+
+.shareHeadBtnC {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%); /* IE 9 */
+  -moz-transform: translate(0, -50%); /* Firefox */
+  -webkit-transform: translate(0, -50%); /* Safari 和 Chrome */
+  -o-transform: translate(0, -50%); /* Opera */
+  z-index: 100;
+}
+//邀请好友图片
+.invite {
+  padding: 0 1.1rem;
+  background: #ffffff;
+  position: relative;
+}
+
+//马上邀请按钮
+.inviteBtn {
+  display: inline-block;
+  width: 100%;
+  height: 4rem;
+  background: #00b7ee;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+//奖励
+.inviteText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #561c1c;
+}
+
+//邀请记录
+.inviteList {
+  padding: 2.25rem 1.1rem 1.25rem 1.1rem;
+  background: #fff;
+  position: relative;
+}
+
+.inviteList div {
+  margin: 0 4.5rem;
+  border-bottom: 1px solid #edba3e;
+}
+
+.inviteList h1 {
+  margin: 0;
+  color: #edba3e;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  background: #fff;
+  position: absolute;
+  top: 2.25rem;
+  left: 50%;
+  transform: translate(-50%, -0.7rem);
+  padding: 0 0.5rem;
+}
+
+//邀请数字
+.inviteNumber {
+  background: #fff;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.inviteNumber span {
+  border-right: 1px solid #edba3e;
+  padding: 0.2rem 0.5rem;
+  color: #333;
+}
+
+.inviteNumber span:last-child {
+  border-color: transparent;
+}
+
+//表格
+.tableList {
+  background: #fff;
+  padding: 0 1.1rem;
+  overflow: hidden;
+  padding-top: 1.5rem;
+}
+
+.tableList ul {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: #f6da96;
+  border-top: 1px solid #874d0d;
+  border-left: 1px solid #874d0d;
+}
+
+.tableList ul li {
+  width: 33.3%;
+  padding: 1.25rem 0;
+  text-align: center;
+  border-bottom: 1px solid #874d0d;
+  border-right: 1px solid #874d0d;
+  font-size: 1.4rem;
+  color: #874d0d;
+  float: left;
+  list-style: none;
+}
+
+//内容
+.tableList .tableItem {
+  background: #fff;
+  border-top: 0;
+}
+
+.tableList .tableItem li {
+  font-size: 1.2rem;
+  color: #874d0d;
+}

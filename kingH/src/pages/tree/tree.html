@@ -1,0 +1,35 @@
+<ion-header>
+  <div class="backHeadBtn">
+    <ion-toolbar>
+      <ion-title>摇钱树</ion-title>
+    </ion-toolbar>
+    <div class="backHeadBtnC" (click)="back()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </div>
+    <div class="selectIonOption">
+      <select name="" id="">
+        <option value="#">近一月</option>
+        <option value="#">近二月</option>
+        <option value="#">近三月</option>
+      </select>
+    </div>
+  </div>
+</ion-header>
+<ion-content class="main">
+  <p class="totalMoney">获取总额：<span *ngIf="status==200">{{count}}</span><span *ngIf="status!=200">0</span>金币</p>
+  <div class="treeList">
+    <ul class="treeTitle">
+      <li>日期</li>
+      <li>摇一摇获取</li>
+    </ul>
+    <div *ngIf="status==200">
+      <ul class="treeContent" *ngFor="let item of items">
+        <li class="date">{{item.createDate}}</li>
+        <li class="money">{{item.amount}}金币</li>
+      </ul>
+    </div>
+    <div *ngIf="status!=200" class="noNumber">
+      <img src="assets/zwsj.png" alt="">
+    </div>
+  </div>
+</ion-content>

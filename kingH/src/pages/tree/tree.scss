@@ -1,0 +1,41 @@
+page-tree {
+
+}
+
+//列表
+//列表标题
+.treeTitle {
+  overflow: hidden;
+  padding: 0.9rem 1.1rem;
+  margin: 0;
+  background: #e3e3e3;
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.treeTitle li, .treeContent li {
+  float: left;
+  text-align: center;
+  list-style: none;
+  width: 50%;
+}
+
+//列表内容
+.treeContent {
+  overflow: hidden;
+  padding: 0.9rem 1.1rem;
+  margin: 0;
+  background: #fff;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.treeContent li {
+  font-size: 1.2rem;
+}
+.treeContent .date {
+  color: #666;
+}
+
+.treeContent .money {
+  color: #333;
+}

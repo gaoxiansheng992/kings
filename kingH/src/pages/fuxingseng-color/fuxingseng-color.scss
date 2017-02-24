@@ -1,0 +1,56 @@
+page-fuxingseng-color {
+
+}
+
+.fuxingsendColor {
+  background-image: url('../assets/yyy.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-color: #000;
+  background-repeat: no-repeat;
+}
+
+.sendColorMoney {
+  margin-top: 1rem;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.sendColorMoney img {
+  width: 1.9rem;
+  height: 1.9rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sendColorMoney span {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+//红包遮罩层
+.moneyMask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.moneyMaskImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 90%;
+}
+
+.moneyMaskImg span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 4rem;
+  color: #fbda30;
+}

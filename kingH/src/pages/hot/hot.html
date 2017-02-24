@@ -1,0 +1,55 @@
+<ion-content class="main">
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content>
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list class="guessList">
+    <ion-item>
+      <div class="keyword">
+        <ion-slides>
+          <ion-slide>
+            <button>白小姐</button>
+            <button>曾道人</button>
+            <button>曾道人</button>
+            <button>黄道仙</button>
+          </ion-slide>
+          <ion-slide>
+            <button>今日头条</button>
+            <button>时评</button>
+            <button>娱乐</button>
+            <button>曾道人</button>
+          </ion-slide>
+        </ion-slides>
+      </div>
+      <div class="imgList" *ngFor="let i of indexItems;let s=index">
+        <h1>{{i.titleNumber}}&nbsp;&nbsp;{{i.titleContent}}</h1>
+        <img src={{i.bigImg}} alt="">
+        <div class="bottomNumber">
+          <ion-row no-padding>
+            <ion-col text-center class="numberItem">
+              <button ion-button clear small color="danger" icon-left>
+                <!--关注-->
+                <img *ngIf="i.likeState==1" (click)="onLike(s)" src="assets/like_link.png" width="20" height="20"
+                     alt="">
+                <!--回复-->
+                <img *ngIf="i.likeState==2" src="assets/like_visiter.png" width="20" height="20" alt="">
+                <span (click)="onLike(s)">{{i.like}}</span>
+              </button>
+            </ion-col>
+            <ion-col text-center="" class="numberItem">
+              <button ion-button clear small color="danger" icon-left>
+                <img (click)="onRecommend(i)" src="assets/message.png" width="20" height="20" alt="">
+                <span (click)="onRecommend(i)">{{i.commond}}</span>
+              </button>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+    </ion-item>
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+      <ion-infinite-scroll-content loadingText="加载中">
+
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-list>
+</ion-content>

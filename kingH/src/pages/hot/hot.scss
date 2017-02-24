@@ -1,0 +1,143 @@
+page-hot {
+
+}
+//page-hot {
+//
+//}
+////ios导航栏
+//.toolbar-ios .nav{
+//  width:100%;
+//  position:absolute;
+//  top:50%;
+//  left:10%;
+//  transform: translate(0,-50%);
+//  height:100%;
+//  line-height:43px;
+//}
+////安卓导航栏
+//.toolbar-md .nav{
+//   width:100%;
+//  position:absolute;
+//  top:50%;
+//  left:10%;
+//  transform: translate(0,-50%);
+//  height:100%;
+//  line-height:56px;
+//}
+.nav span{
+  display: inline-block;
+  width:27%;
+  text-align:center;
+  height: 100%;
+  line-height: 29px;
+  vertical-align: middle;
+  font-size: 1.7rem;
+}
+////被激活项导航栏
+//.active{
+//  border-bottom: 3px solid #333;
+//}
+//ion-icon{
+//  padding: 10px 20px 10px 0;
+//}
+//改变导航栏样式
+//激活后的样式
+.segment-md .segment-button.activated, .segment-md .segment-button.segment-activated, .segment-ios .segment-button.segment-activated {
+  background: transparent;
+  color: #333;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 3px solid #333;
+}
+
+//普通样式
+.segment-md .segment-button, .segment-ios .segment-button {
+  border: 0;
+  color: #333;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 44px;
+  font-size: 1.7rem;
+}
+
+//处理框架自带样式；
+.item-md.item-block .item-inner {
+  padding: 0;
+}
+
+.label-md {
+  margin: 0;
+}
+
+//主体内容背景色
+.main {
+  background-color: #ededed;
+}
+
+.list-ios {
+  margin: 0;
+}
+
+//主题内容关键字
+.slide-zoom{
+  text-align: left;
+}
+.keyword {
+  padding: 1rem 1.1rem;
+  background: #ededed;
+}
+.keyword button {
+  background: #fff;
+  color: #666;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  display: inline-block;
+  padding:0 1rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+}
+.segment-md .segment-button{
+  font-weight: 400;
+}
+.imgList {
+  padding: 0 1.1rem;
+  //margin-top: 100px;
+  box-shadow: 0px 3px 3px #aaa;
+  background: #fff;
+  margin-bottom:4px;
+}
+
+//主题内容列表项阴影
+//主体内容标题
+.guessList {
+  background: #fff;
+}
+
+.guessList h1 {
+  color: #333;
+  font-size: 1.4rem;
+  padding: 1.3rem 0;
+}
+
+//评论宽度
+.bottomNumber {
+  overflow: hidden;
+}
+
+.bottomNumber ion-row {
+  width: 60%;
+  float: right;
+
+}
+
+//评论图片
+.numberItem img {
+  margin-right: 2px;
+  vertical-align: center;
+}
+
+//评论数字
+.numberItem span {
+  color: #999;
+}

@@ -1,0 +1,66 @@
+page-help {
+
+}
+
+.list-ios > .item-block:first-child {
+  border: 0;
+}
+
+.item-md, .item-ios, .item-ios.item-block .item-inner {
+  padding: 0;
+  border: 0;
+}
+
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+  border: 0;
+}
+
+.helpIon {
+  float: right;
+  color: #666;
+  font-size: 2rem;
+  line-height: 44px;
+}
+
+.label-ios {
+  margin: 0;
+}
+
+//列表项
+//问题
+.question span {
+  font-size: 1.4rem;
+  padding: 0 1.1rem;
+  height: 44px;
+  display: block;
+  line-height: 44px;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+
+//答案
+.question div {
+  font-size: 1.2rem;
+  color: #666;
+  background: #f1f1f1;
+  padding: 0.8rem 1.1rem;
+  line-height: 2rem;
+}
+
+ion-icon {
+  font-size: 1.4rem;
+  float: right;
+  color: #666;
+}
+
+//主体内容空白条
+.black {
+  height: 1.2rem;
+  background: #ededed;
+}
+
+//主体内容背景色
+.main {
+  background-color: #ededed;
+}

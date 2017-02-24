@@ -1,0 +1,63 @@
+page-all {
+
+}
+
+//首字母
+.letter {
+  padding: 0.5rem 1.6rem;
+  background: #ededed;
+  display: block;
+  color: #333;
+}
+
+//全部之搜索框
+.searchbar-ios {
+  background-color: #ededed;
+  border: 0;
+  margin-top: 1rem;
+  padding: 0 1.1rem;
+}
+
+//搜索图标
+.searchbar-ios .searchbar-search-icon, .searchbar-md .searchbar-search-icon {
+  top: 50%;
+  left: 11px;
+  transform: translate(0, -50%);
+}
+
+.searchInput input {
+  width: 100%;
+  height: 3.2rem;
+  border-radius: 5px;
+  padding: 0 10px;
+  outline: none;
+  border: 0;
+  font-size: 1.4rem;
+}
+
+.search {
+  font-size: 1.4rem;
+  color: #333;
+  padding: 1.3rem 1.5rem;
+  border-bottom: 1px solid #ededed;
+}
+
+//左侧字母导航
+.pageAside {
+  position: fixed;
+  //top: 4.5rem;
+  top:55%;
+  transform: translate(0,-50%);
+  right: 1rem;
+  text-align: center;
+}
+
+.pageAside a {
+  color: #edba3d;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.pageAside div {
+  margin-bottom: 0.2rem;
+}

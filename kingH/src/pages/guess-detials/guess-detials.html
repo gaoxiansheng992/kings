@@ -1,0 +1,86 @@
+<ion-header>
+  <div class="backHeadBtn">
+    <ion-toolbar>
+      <ion-title>{{item.titleNumber}}&nbsp;&nbsp;{{item.titleContent}}</ion-title>
+    </ion-toolbar>
+    <div class="backHeadBtnC" (click)="back()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </div>
+  </div>
+</ion-header>
+<ion-content>
+  <!--详情-->
+  <div class="imgList">
+    <p></p>
+    <img src={{item.bigImg}} alt="">
+    <div class="bottomNumber">
+      <ion-row no-padding>
+        <ion-col text-center class="numberItem">
+          <button ion-button clear small color="danger" icon-left>
+            <!--关注-->
+            <img *ngIf="item.likeState==1" src="assets/like_link.png" width="20" height="20" alt="">
+            <!--回复-->
+            <img *ngIf="item.likeState==2" src="assets/like_visiter.png" width="20" height="20" alt="">
+            <span>{{item.like}}</span>
+          </button>
+        </ion-col>
+        <ion-col text-center="" class="numberItem">
+          <button ion-button clear small color="danger" icon-left>
+            <img src="assets/message.png" width="20" height="20" alt="">
+            <span>{{item.commond}}</span>
+          </button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+  <!--评论-->
+  <div class="squarecommentList">
+    <!--每条评论-->
+    <div class="squarecommentListA">
+      <!--头部-->
+      <div class="squarecommentListAHead">
+        <!--头部头像-->
+        <div class="squarecommentListAHeadimg">
+          <img src="assets/commit.png" alt="">
+        </div>
+        <!--用户名及时间-->
+        <div class="squarecommentListAHeadut">
+          <!--头部用户名-->
+          <div class="squarecommentListAHeaduse">
+            <span>温州刘德华</span>
+          </div>
+          <!--头部时间-->
+          <div class="squarecommentListAHeadtime">
+            <span>12-24 09：11</span>
+          </div>
+        </div>
+      </div>
+      <!--内容-->
+      <div class="squarecommentListAContent">
+        <span (click)="replyMask()">这期特码是猪，赌上我赌王的尊严！</span>
+      </div>
+    </div>
+    <!--二级评论-->
+    <div class="secondcommentList" id="secondGuessList">
+      <div *ngFor="let item of secondList">
+        <span class="secondcommentListName" *ngIf="item.type==2">{{item.nikeName}}</span>
+        <a *ngIf="item.type==3"><span class="secondcommentListName">{{item.nikeName}}</span>回复<span
+          class="secondcommentListName">{{item.mNikeName}}</span></a>：<span
+        (click)="replay()">{{item.content}}</span>
+      </div>
+    </div>
+  </div>
+  <!--回复输入框-->
+  <div class="replayInput" *ngIf="inputstate">
+    <input type="text" placeholder="回复温州刘德华">
+    <input type="submit" value="回复">
+  </div>
+  <!--弹出框-->
+  <div class="replay" *ngIf="replyState">
+    <div class="mask">
+      <p (click)="replay()">回复</p>
+      <p (click)="report()">举报</p>
+      <p (click)="qx()">取消</p>
+    </div>
+  </div>
+</ion-content>

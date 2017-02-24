@@ -1,0 +1,105 @@
+page-code-statistics {
+
+}
+//特码统计
+.codeCount ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.codeCount ul li {
+  height: 2.8rem;
+  line-height: 2.8rem;
+  float: left;
+  list-style: none;
+}
+
+.codeCount .countTwo {
+  width: 7%;
+}
+
+.codeCount .countThree {
+  width: 12.33%;
+}
+
+//标题
+.codeHead {
+  overflow: hidden;
+  background: #999;
+  color: #fff;
+}
+
+.codeHead li {
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  font-size: 1.2rem;
+}
+
+.codeHead li:last-child {
+  border-right: none;
+}
+
+//内容
+.codeBody ul:nth-child(odd){
+  background: #fff;
+  overflow: hidden;
+}
+.codeBody ul:nth-child(even){
+  background: #f9f9f9;
+  overflow: hidden;
+}
+.codeBody li {
+  border-right: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  color: #666;
+  font-size: 1rem;
+}
+
+.codeBody li:last-child {
+  border-right: none;
+}
+
+//生肖颜色
+.codeBody .codeAnimal {
+  color: #F926FA;
+}
+
+//大小
+.codeBody li.codeBigSmall {
+  color: #B31B2F;
+}
+
+//单双
+.codeBody .codeSingle {
+  color: #ED2E9C;
+}
+
+.codeBody .codeDouble {
+  color: #666;
+}
+
+//五行颜色－金
+.codeBody .elementGold {
+  color: #DDC626;
+}
+
+//五行颜色－木
+.codeBody .elementTree {
+  color: #85BC35;
+}
+
+//五行颜色－水
+.codeBody .elementWater {
+  color: #29B0E5;
+}
+
+//五行颜色－火
+.codeBody .elementHot {
+  color: #F24938;
+}
+
+//五行颜色－土
+.codeBody .elementSoil {
+  color: #9E6B12;
+}

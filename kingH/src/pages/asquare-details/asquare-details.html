@@ -1,0 +1,136 @@
+<ion-header>
+  <div class="backHeadBtn">
+    <ion-toolbar>
+      <ion-title>帖子详情</ion-title>
+    </ion-toolbar>
+    <div class="backHeadBtnC" (click)="back()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </div>
+    <div class="shareHeadBtnC">
+      <ion-icon name="ios-more" class="helpImg" (click)="postShare(currentUserId)"></ion-icon>
+    </div>
+  </div>
+</ion-header>
+<ion-content>
+  <div class="onlysquare" *ngFor="let item of detail">
+    <!--点赞评论转发之外-->
+    <div class="squarePost">
+      <!--头部-->
+      <div class="squarepostHead">
+        <!--头部头像-->
+        <div class="squarepostHeadUse">
+          <img src="{{item.userPic}}" alt="">
+        </div>
+        <!--头部大标题及粉丝-->
+        <div class="squarepostFans">
+          <!--头部大标题-->
+          <div class="squarepostFansgrade squarepostFansgradeDetial">
+            <span>{{item.nickName}}</span>
+            <img *ngIf="item.expertLv!==0" src="{{expertLv[item. expertLv]}}" alt="">
+            <img *ngIf="item.communityLv!==0" src="{{communityLv[item. communityLv]}}" alt="">
+            <img *ngIf="item.cashLv!==0" src='{{cashLv[item.cashLv]}}' alt="">
+          </div>
+          <!--头部粉丝-->
+          <div class="fans">
+            <span>粉丝&nbsp;&nbsp;{{item.fansCn}}</span>
+          </div>
+        </div>
+        <!--时间及关注按钮-->
+        <div class="squarepostHeadtime">
+          <div>{{item.createDate}}</div>
+          <div class="sauqreFollow">
+            <span (click)="focus()" *ngIf="item.isFollow==1">关注</span>
+            <span *ngIf="item.isFollow==2" class="isFollow">已关注</span>
+          </div>
+        </div>
+      </div>
+      <!--标题-->
+      <div class="squarepostText">
+        <span>{{item.summary}}</span>
+      </div>
+      <!--图片详情-->
+      <ul class="squarepostImg">
+        <li *ngFor="let s of item.url"><img src="{{s}}" alt=""></li>
+      </ul>
+    </div>
+    <!--评论，转发，点赞-->
+    <ul class="squarepostLike">
+      <!--评论-->
+      <li>
+        <img src="assets/message.png" alt="">
+        <span>{{item.replyCn}}</span>
+      </li>
+      <!--点赞-->
+      <li (click)="thumbsUp(s)">
+        <img src="assets/recommend_link.png" alt="" *ngIf="item.isThumb==1">
+        <img src="assets/recommend_visiter.png" alt="" *ngIf="item.isThumb==2">
+        <span>{{item.thumbCn}}</span>
+      </li>
+      <!--转发-->
+      <li>
+        <img src="assets/forward.png" alt="">
+        <span>{{item.followC}}</span>
+      </li>
+    </ul>
+  </div>
+  <!--评论列表-->
+  <div class="squarecommentList" *ngFor="let commet of list1">
+    <!--每条评论-->
+    <div class="squarecommentListA">
+      <!--头部-->
+      <div class="squarecommentListAHead">
+        <!--头部头像-->
+        <div class="squarecommentListAHeadimg">
+          <img src="{{commet.onDetail.picUrl}}" alt="">
+        </div>
+        <!--用户名及时间-->
+        <div class="squarecommentListAHeadut">
+          <!--头部用户名-->
+          <div class="squarecommentListAHeaduse">
+            <span>{{commet.onDetail.nickName}}</span>
+          </div>
+          <!--头部时间-->
+          <div class="squarecommentListAHeadtime">
+            <span>{{commet.onDetail.createDate}}</span>
+          </div>
+        </div>
+      </div>
+      <!--内容-->
+      <div class="squarecommentListAContent">
+        <span (click)="replyMask()">{{commet.onDetail.content}}</span>
+      </div>
+    </div>
+    <!--二级评论-->
+    <div class="secondcommentList">
+      <div *ngFor="let item of commet.twoDetails">
+        <span class="secondcommentListName" *ngIf="item.type==2">{{item.nickName}}</span>
+        <a *ngIf="item.type==3"><span class="secondcommentListName">{{item.nickName}}</span>回复<span
+          class="secondcommentListName">{{item.mNickName}}</span></a>：<span (tap)="replay()">{{item.content}}</span>
+      </div>
+    </div>
+  </div>
+  <!--回复输入框-->
+  <div class="replayInput" *ngIf="inputstate">
+    <input type="text" placeholder="回复温州刘德华">
+    <input type="submit" value="回复">
+  </div>
+  <!--单击一级评论时弹出框-->
+  <div class="replay" *ngIf="replyState">
+    <div class="mask">
+      <p (tap)="replay()">回复</p>
+      <p (tap)="report()">举报</p>
+      <p (tap)="delete()">删除</p>
+      <p (tap)="qx()">取消</p>
+    </div>
+  </div>
+  <!--拉黑弹出框-->
+  <div class="pullBlack" *ngIf="pullState">
+    <div class="pullBlackContent">
+      <p>你确定将此用户拉黑？</p>
+      <div class="pullBtn">
+        <span (tap)="pullresit()">取消</span><span (tap)="pullsubmit()">确认</span>
+      </div>
+    </div>
+  </div>
+</ion-content>
+

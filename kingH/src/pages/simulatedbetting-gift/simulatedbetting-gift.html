@@ -1,0 +1,39 @@
+<ion-header>
+  <div class="backHeadBtn">
+    <ion-toolbar>
+      <ion-title>兑换礼品</ion-title>
+    </ion-toolbar>
+    <div class="backHeadBtnC" (click)="back()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </div>
+  </div>
+</ion-header>
+<ion-content class="main bgcolor">
+  <div class="slider">
+    <ion-slides pager autoplay=4000 loop speed=1500>
+      <ion-slide *ngFor="let item of slides">
+        <img [src]="item" alt="">
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <!--轮播下方空白条-->
+  <div class="sliderBlank"></div>
+  <!--兑换列表-->
+  <div class="chargeList">
+    <div class="chargelistItem chargelistItemd">
+      <img src="assets/charge1.png" alt="">
+      <span>兑换条件：100金币</span>
+      <span class="chargeBtn" (click)="toDetails()">兑&nbsp;&nbsp;&nbsp;换</span>
+    </div>
+    <div class="chargelistItem">
+      <img src="assets/charge2.png" alt="">
+      <span>兑换条件：200金币</span>
+      <span class="chargeBtn">兑&nbsp;&nbsp;&nbsp;换</span>
+    </div>
+    <div class="chargelistItem">
+      <img src="assets/charge3.png" alt="">
+      <span>兑换条件：500金币</span>
+      <span class="chargeBtn">兑&nbsp;&nbsp;&nbsp;换</span>
+    </div>
+  </div>
+</ion-content>

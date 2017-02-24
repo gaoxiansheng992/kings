@@ -1,0 +1,78 @@
+<ion-content id="aquareId">
+  <div class="aquare">
+    <!--心水广场轮播-->
+    <!--<div class="slider squareSlider">-->
+    <!--<ion-slides pager autoplay=4000 loop speed=1500>-->
+    <!--<ion-slide *ngFor="let item of carousel">-->
+    <!--&lt;!&ndash;点击图片&ndash;&gt;-->
+    <!--<img [src]="item.url" alt="">-->
+    <!--</ion-slide>-->
+    <!--</ion-slides>-->
+    <!--</div>-->
+    <!--最新热帖-->
+    <div class="aquareTitle">
+      <span>最新热帖</span>
+    </div>
+  </div>
+  <div class="onlysquare" *ngFor="let item of items;let s=index">
+    <!--点赞评论转发之外-->
+    <div class="squarePost">
+      <!--头部-->
+      <div class="squarepostHead">
+        <!--头部头像-->
+        <div class="squarepostHeadUse">
+          <img src="{{item.userPic}}" alt="">
+        </div>
+        <!--头部大标题及粉丝-->
+        <div class="squarepostFans">
+          <!--头部大标题-->
+          <div class="squarepostFansgrade">
+            <span>{{item.nickName}}</span>
+            <img src="{{item.expertLv}}" alt="">
+            <img src="{{item.communityLv}}" alt="">
+            <img src="{{item.cashLv}}" alt="">
+          </div>
+          <!--头部粉丝-->
+          <div class="fans">
+            <span>粉丝&nbsp;&nbsp;{{item.fansCn}}</span>
+          </div>
+        </div>
+        <!--时间及关注按钮-->
+        <div class="squarepostHeadtime">
+          <div>{{item.createDate}}</div>
+          <div class="sauqreFollow">
+            <span (click)="focus(s)" *ngIf="item.isFollow==0">关注</span>
+            <span *ngIf="item.isFollow==1" class="isFollow">已关注</span>
+          </div>
+        </div>
+      </div>
+      <!--标题-->
+      <div class="squarepostText">
+        <span (click)="tosquareDetal()">{{item.summary}}</span>
+      </div>
+      <!--图片详情-->
+      <ul class="squarepostImg">
+        <li *ngFor="let imgUrl of item.url"><img src="{{imgUrl}}" alt="" (click)="showImg()"></li>
+      </ul>
+    </div>
+    <!--评论，转发，点赞-->
+    <ul class="squarepostLike">
+      <!--评论-->
+      <li>
+        <img src="assets/message.png" alt="">
+        <span>{{item.replyCn}}</span>
+      </li>
+      <!--点赞-->
+      <li (click)="thumbsUp(s)">
+        <img src="assets/recommend_link.png" alt="" *ngIf="item.thumbCntype==1">
+        <img src="assets/recommend_visiter.png" alt="" *ngIf="item.thumbCntype==2">
+        <span>{{item.thumbCn}}</span>
+      </li>
+      <!--转发-->
+      <li>
+        <img src="assets/forward.png" alt="">
+        <span>{{item.forwardCn}}</span>
+      </li>
+    </ul>
+  </div>
+</ion-content>

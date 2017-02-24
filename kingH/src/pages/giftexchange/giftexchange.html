@@ -1,0 +1,44 @@
+<ion-header>
+  <div class="backHeadBtn">
+    <ion-toolbar>
+      <ion-title>礼品兑换明细</ion-title>
+    </ion-toolbar>
+    <div class="backHeadBtnC" (click)="back()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </div>
+    <div class="selectIonOption">
+      <select name="" id="">
+        <option value="#">近一月</option>
+        <option value="#">近二月</option>
+        <option value="#">近三月</option>
+      </select>
+    </div>
+  </div>
+</ion-header>
+<ion-content class="main">
+  <p class="totalMoney">消费合计：<span *ngIf="status==200">{{spendMoney}}</span><span *ngIf="status!=200">0</span>金币</p>
+  <div class="moneyList">
+    <ul class="moneyTitle">
+      <li>礼品名称</li>
+      <li>日期</li>
+      <li>金额</li>
+      <li>状态</li>
+    </ul>
+    <div *ngIf="status==200">
+      <ul class="moneyContent" *ngFor="let item of list">
+        <li class="type">{{item.giftName}}</li>
+        <li class="date">{{item.date}}</li>
+        <li class="money">{{item.money}}</li>
+        <li class="state">
+          <span>成功</span>
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="status!=200" class="noNumber">
+      <img src="assets/zwsj.png" alt="">
+    </div>
+  </div>
+</ion-content>
+
+
+

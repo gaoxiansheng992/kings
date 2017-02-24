@@ -1,0 +1,39 @@
+page-asquare-img {
+
+}
+page-square-img {
+
+}
+.bigImg{
+  background-color:#000;
+  padding:1.1rem;
+}
+.bigImg img{
+  width:100%;
+}
+.bigImgList{
+  position:relative;
+}
+.bigImgList .saveBtn{
+  position: fixed;
+  bottom:1.1rem;
+  left:1.1rem;
+  z-index: 9999;
+  overflow: hidden;
+  width:94%;
+}
+.saveBtn div{
+  color:#fff;
+  font-size: 1.6rem;
+  float: left;
+  display: inline-block;
+  background-color:rgba(0,0,0,0.8);
+  width:5rem;
+  height:2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 5px;
+}
+.saveBtn div:last-child{
+  float:right;
+}

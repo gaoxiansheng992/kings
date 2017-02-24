@@ -1,0 +1,148 @@
+page-asquare-details {
+
+}
+
+.squaredetail {
+  background-color: #fff;
+}
+
+//帖子详情用户名
+.squarepostFansgradeDetial span {
+  color: #c09326;
+}
+
+//评论列表
+.squarecommentList {
+  margin-top: -1rem;
+  padding: 1.1rem;
+  border-bottom: 1px solid #ededed;
+}
+.squarecommentList:last-child{
+  border-bottom: 1px solid transparent;
+}
+//评论头像
+.squarecommentListA .squarecommentListAHead .squarecommentListAHeadimg img {
+  width: 3.6rem;
+  height: 3.6rem;
+  //vertical-align: middle;
+  border-radius: 1.8rem;
+}
+
+// 用户名
+.squarecommentListAHead {
+  overflow: hidden;
+}
+
+.squarecommentListAHeadimg, .squarecommentListAHeadut {
+  float: left;
+}
+
+.squarecommentListAHeadimg {
+  padding-right: 0.5rem;
+}
+
+.squarecommentListAHeaduse span {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+//评论时间
+.squarecommentListAHeadtime {
+  margin-top: 0.2rem;
+}
+
+.squarecommentListAHeadtime span {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+//评论内容
+.squarecommentListAContent {
+  padding-left: 3.6rem;
+}
+
+.squarecommentListAContent span {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+//二级评论
+.secondcommentList {
+  background-color: #f1f1f1;
+  margin-left: 3.6rem;
+  padding: 0.5rem;
+  margin-top: 1.1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.secondcommentList div {
+  margin-bottom: 0.5rem;
+}
+
+.secondcommentList div span {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.secondcommentList .secondcommentListName {
+  color: #29bdfb;
+}
+
+.secondcommentList a {
+  color: #333;
+}
+
+.secondcommentList div:last-child {
+  margin-bottom: 0;
+}
+
+//分享弹出框字体颜色
+.action-sheet-md .action-sheet-button, .action-sheet-ios .action-sheet-button {
+  color: #333;
+  font-size: 1.4rem;
+  min-height: 4.6rem;
+}
+
+//拉黑弹出框
+.pullBlack {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4)
+}
+.pullBlackContent{
+  width:70%;
+  background-color: #fff;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  padding:3rem 0 0 0;
+  border-radius: 8px;
+}
+.pullBlackContent p{
+  color:#fe5858;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.pullBtn span{
+  margin-top:1rem;
+  height:4.5rem;
+  line-height: 4.5rem;
+  display: inline-block;
+  width:50%;
+  text-align: center;
+  border-top:1px solid #ededed;
+  font-size: 1.4rem;
+}
+.pullBtn span:first-child{
+  border-right:1px solid #dedede;
+  color:#999;
+}
+.pullBtn span:last-child{
+  color:#2ebff8;
+}
+

@@ -1,0 +1,43 @@
+<ion-header>
+  <div class="backHeadBtn">
+    <ion-toolbar>
+      <ion-title>提现明细</ion-title>
+    </ion-toolbar>
+    <div class="backHeadBtnC" (click)="back()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </div>
+    <div class="selectIonOption">
+      <select name="" id="">
+        <option value="#">近一月</option>
+        <option value="#">近二月</option>
+        <option value="#">近三月</option>
+      </select>
+    </div>
+  </div>
+</ion-header>
+<ion-content class="main">
+  <p class="totalMoney">提现共计：<span>500</span>元宝</p>
+  <div class="moneyList">
+    <ul class="moneyTitle">
+      <li>提现方式</li>
+      <li>日期</li>
+      <li>金额</li>
+      <li>状态</li>
+    </ul>
+    <ul class="moneyContent">
+      <li class="type">支付宝</li>
+      <li class="date">10-25 10:05</li>
+      <li class="money">500</li>
+      <li class="state">
+        <span>申请中……</span>
+        <span class="process">查看进度&gt;</span>
+      </li>
+    </ul>
+    <ul class="moneyContent">
+      <li class="type">支付宝</li>
+      <li class="date">10-25 10:05</li>
+      <li class="money">500</li>
+      <li class="state">提现失败</li>
+    </ul>
+  </div>
+</ion-content>

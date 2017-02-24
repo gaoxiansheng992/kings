@@ -1,0 +1,78 @@
+page-cash-advance {
+
+}
+
+.main .cashItem {
+  margin: 0;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 1rem 1.25rem;
+  font-size: 1.4rem;
+
+}
+
+.card-content-ios, .card-content-md {
+  padding: 0;
+
+}
+
+.card-md, .card-ios {
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #999;
+}
+
+.officeUser {
+  margin-bottom: 2.4rem;
+  overflow: hidden;
+}
+
+//官方留言
+.officeMsg {
+  padding: 0 1.1rem;
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  //float: left;
+}
+
+.officeMsg p {
+  margin: 0;
+}
+
+.officeMsg .msgTime {
+  color: #666;
+}
+
+.officeMsg .msgText {
+  color: #333;
+}
+
+//官方回复内容
+.msgContent {
+  background: #e1e1e1;
+  color: #333;
+  padding: 1.2rem 0.75rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: inline-block;
+
+}
+
+//用户留言
+.consumerMsg {
+  margin-top: 2.25rem;
+  text-align: right;
+}
+
+//用户回复内容
+.consumerContent {
+  background: #f7da96;
+}
+
+//回复按钮
+.replyBtn {
+  padding: 0.5rem 1rem;
+  color: #999;
+  border: 1px solid #b3b3b3;
+  border-radius: 8px;
+  margin-left: 1rem;
+}

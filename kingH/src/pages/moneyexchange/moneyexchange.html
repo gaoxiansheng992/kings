@@ -1,0 +1,39 @@
+
+<ion-header>
+  <div class="backHeadBtn">
+    <ion-toolbar>
+      <ion-title>兑换金币</ion-title>
+    </ion-toolbar>
+    <div class="backHeadBtnC" (click)="back()">
+      <ion-icon name="ios-arrow-back"></ion-icon>
+    </div>
+    <div class="selectIonOption">
+      <select name="" id="">
+        <option value="#">近一月</option>
+        <option value="#">近二月</option>
+        <option value="#">近三月</option>
+      </select>
+    </div>
+  </div>
+</ion-header>
+<ion-content class="main">
+  <p class="totalMoney">兑换总额：<span *ngIf="status==200">{{count}}</span><span *ngIf="status!=200">0</span>金币</p>
+  <div class="discountList">
+    <ul class="discountTitle">
+      <li>元宝额度</li>
+      <li>日期</li>
+      <li>兑换金币额度</li>
+    </ul>
+    <div *ngIf="status==200">
+    <ul class="discountContent" *ngFor="let item of items">
+      <li class="type">{{item.gold}}元宝</li>
+      <li class="date">{{item.createDate}}</li>
+      <li class="money">{{item.amount}}金币</li>
+    </ul>
+    </div>
+    <div *ngIf="status!=200" class="noNumber">
+      <img src="assets/zwsj.png" alt="">
+    </div>
+  </div>
+</ion-content>
+
